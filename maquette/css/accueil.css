@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    margin-bottom: -20px;
+}
+
+
+/* =================================================================NAVBAR */
+
+
+/* Réinitialisation des styles par défaut */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Styles pour la navbar */
+
+.navbar {
+    background-color: #fff;
+    border-bottom: 3px solid pink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+/* Styles pour le logo */
+
+.logo img {
+    width: 100px;
+    /* Ajustez la largeur du logo selon vos besoins */
+}
+
+
+/* Styles pour la liste de liens */
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+    /* Espace entre les éléments de la liste */
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+    /* Supprimer la marge à droite du dernier élément */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+
+/* Styles pour le hover */
+
+.nav-links a:hover {
+    color: #fff;
+    background-color: pink;
+    padding: 10px 20px;
+    /* Remplit toute la hauteur de la navbar */
+}
+
+
+/* =================================================================IMAGE MODEL*/
+
+
+/* Styles pour la section slider */
+
+.slider {
+    position: relative;
+    height: 500px;
+    /* Ajustez la hauteur selon vos besoins */
+}
+
+
+/* Styles pour l'image de fond */
+
+.slider-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/slider.jpg');
+    /* Remplacez 'votre-image.jpg' par le chemin de votre image */
+    background-size: cover;
+    /* Ajustez la taille de l'image de fond */
+    background-position: center center;
+    /* Centrez l'image de fond */
+    /* Réglez l'opacité de l'image de fond selon vos besoins */
+}
+
+.text-slider {
+    opacity: 2.5;
+    margin-top: 150px;
+    /* Ajustez la valeur en pixels selon votre préférence */
+}
+
+.text-slider {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Couleur noire semi-transparente */
+    padding: 20px;
+    /* Ajustez le rembourrage selon vos besoins */
+    color: #fff;
+    /* Couleur du texte à l'intérieur */
+}
+
+
+/* Style pour h2 avec les classes .text-center et .futura et .ptitle */
+
+h2.text-center.ptitle {
+    color: #fff;
+}
+
+
+/* Style pour h2 avec les classes .text-center et .title */
+
+h1.text-center.title {
+    color: rgb(223, 49, 78);
+    font-size: 100px;
+}
+
+
+/*OFFRES =================================================================*/
+
+.card-body {
+    background-color: rgb(247, 60, 91);
+    color: white;
+}
+
+.my-0 {
+    background-color: rgb(247, 60, 91);
+    color: white;
+}
+
+.p-futurabold.t-no {
+    color: aliceblue;
+}
+
+.greyy {
+    background-color: rgb(241, 241, 241);
+}
+
+footer {
+    background-color: #575656;
+    color: white;
+}

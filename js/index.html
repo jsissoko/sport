@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Exercies </h1>
+
+    <script>
+        var fruits = ['Apple', 'Banana', 'Strawberry', 'Orange'];
+        // Exercice 0
+        // Afficher les valeurs du tableau dans la console
+        console.log(fruits)
+            // Faire l'ajout d'un fruit à la fin
+        fruits.push('peach')
+        console.log(fruits)
+            // Faire l'ajout d'un fruit au début
+        fruits.unshift('raisin')
+        console.log(fruits)
+            // Faire la suppression d'un fruit
+
+        const fruit1 = fruits.shift([2]);
+        console.log(fruits)
+
+
+        // Exercice 1
+        //Créer une fonction qui permet d'additionner deux arguments et retourne le résultat dans la console
+
+        function add(n1, n2) {
+            return n1 + n2;
+        }
+
+        console.log(add(23, 76));
+        // Exercice 2
+        //Afficher la table de multiplication de 8 dans la console.
+
+        let a = 0
+        const b = 8
+        while (a < 11) {
+            const res = a * b
+            a = a + 1
+            console.log(res)
+        }
+
+
+        // Exercice 3
+        //Créer une fonction qui permet d'afficher une plage de multiplication avec 2 arguments (ex : arg1=4, arg2=7 permet d'afficher les tables de 4 à 7)
+
+
+        function afficher(n1, n2) {
+            for (let a = 1; a <= 10; a++) {
+                let result1 = n1 * a;
+                let result2 = n2 * a;
+                console.log(`Table de multiplication pour ${n1} : ${n1} x ${a} = ${result1}`);
+                console.log(`Table de multiplication pour ${n2} : ${n2} x ${a} = ${result2}`);
+            }
+        }
+
+        afficher(1, 8);
+
+
+        // Exercice 4
+        // Écrivez une expression conditionnelle utilisant les variables $age et $sexe dans une instruction if 
+        // pour sélectionner une personne de sexe féminin dont l’âge est compris entre 21 et 40 ans et 
+        // afficher un message de bienvenue approprié("Bienvenue madame").
+
+        let age = 0
+        let genre = ' '
+
+        /* genre = prompt('Entrer votre genre féminin ou masculin')
+         age = prompt('Entrer votre age')
+         if (genre === "féminin" && age >= 21 && age <= 40) {
+             console.log("Bienvenue madame");
+         } else {
+
+             console.log("Vous n'etes pas autoriser")
+         }*/
+
+        // Exercice 5
+        // Quelle syntaxe permet d'afficher le deuxième élément du tableau $cocktails ?
+        var cocktails = ['Mojito', 'Long Island Iced Tea', 'Gin Fizz', 'Moscow mule'];
+
+        console.log(cocktails[1]);
+        // Exercice 6 
+        // J'aimerais connaitre le nombre exact dans le tableau cocktails
+
+        console.log(cocktails.length);
+
+        // Exercice 7 
+        // En utilisant la boucle for, afficher la tableau de cocktails.
+
+        var cocktails = ['Mojito', 'Long Island Iced Tea', 'Gin Fizz', 'Moscow mule'];
+
+        for (var i = 0; i < cocktails.length; i++) {
+            console.log(cocktails[i]);
+        }
+
+        // Exercice 8
+        // Calculer le prix TTC du produit en utilisant une fonction et afficher le resultat dans la console.
+        var prix_ht = 50;
+        var tva = 20;
+        var prix_ttc = 0;
+
+        function calculerPri(prix_ht, tva) {
+            var prix_ttc = prix_ht + (prix_ht * (tva / 100));
+            return prix_ttc;
+        }
+
+        prix_ttc = calculerPri(prix_ht, tva);
+        console.log("Le prix TTC est : " + prix_ttc);
+
+
+        // Exercice 9
+        // Ecrivez une boucle qui affiche ce qui est demandé    
+        // Le nombre de colonne à afficher dépend du n° de ligne, à la ligne i, il faut afficher i colonnes.
+        // Résultat attendu :
+        // 1
+        // 22
+        // 333
+        // 4444
+        // 66666
+        // 666666
+        // 7777777
+        for (var i = 1; i <= 7; i++) {
+            var ligne = "";
+
+            for (var j = 1; j <= i; j++) {
+                ligne += i;
+            }
+
+            console.log(ligne);
+        }
+
+
+        // Exercice 10
+        // Ecrivez une boucle qui affiche ce qui est demandé
+        // Résultat attendu :
+        // 0000000000
+        // 1111111111
+        // 2222222222
+        // 3333333333
+        // 4444444444
+        // 5555555555
+        // 6666666666
+
+        for (var ligne = 0; ligne <= 6; ligne++) {
+            var resultat = "";
+
+            for (var chiffre = 0; chiffre <= 9; chiffre++) {
+                resultat += ligne;
+            }
+
+            console.log(resultat);
+        }
+    </script>
+</body>
+
+</html>
